@@ -1,45 +1,48 @@
-#include<stdio.h>
+#include <iostream>
+using namespace std;
+
 int main()
 {
-    int i, j=0, n, counter=0;
-    printf("Enter Size of Frame1: ");
-    scanf("%d",&n);
-    int frame1[n],frame2[n];
-    printf("Enter the bits for frame1:");
-    for(i=0;i<n;i++)
+    int i, j = 0, n, counter = 0;
+    cout << "Enter Size of Frame1: ";
+    cin >> n;
+    int frame1[n], frame2[n + 1];
+    cout << "Enter the bits for frame1: ";
+    for (i = 0; i < n; i++)
     {
-        scanf("%d",&frame1[i]);
+        cin >> frame1[i];
     }
-    for(i=0;i<n;i++)
+    for (i = 0; i < n; i++)
     {
-        if(frame1[i]==1)
+        if (frame1[i] == 1)
         {
             counter++;
-            frame2[j]=frame1[i];
+            frame2[j] = frame1[i];
             j++;
         }
         else
         {
-            counter=0;
-            frame2[j]=frame1[i];
+            counter = 0;
+            frame2[j] = frame1[i];
             j++;
         }
-        if(counter==5)
+        if (counter == 5)
         {
-             counter=0;
-             frame2[j]=0;
-             j++;
+            counter = 0;
+            frame2[j] = 0;
+            j++;
         }
     }
-    printf("Frame1: ");
-    for(i=0;i<n;i++)
+
+    cout << "Frame1: ";
+    for (i = 0; i < n; i++)
     {
-        printf("%d",frame1[i]);
+        cout << frame1[i];
     }
-    printf("\nFrame2: ");
-    for(j=0;j<=n;j++)
+    cout << "\nFrame2: ";
+    for (i = 0; i < j; i++)
     {
-        printf("%d",frame2[j]);
+        cout << frame2[i];
     }
     return 0;
-}            
+}
