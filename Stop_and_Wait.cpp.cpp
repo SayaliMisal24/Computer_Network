@@ -12,7 +12,7 @@ int main()
 	cout<<"Enter No. of Frames:";
 	cin>>n;
 	for (i=0;i<n;i++){
-		cout<<"Enter Frame "<<i+1<<" Frame ";
+		cout<<"Enter"<<i+1<<" Frame ";
 		cin>>frame[i];
 		delay=rand()%10;
 		if(timeout<delay){
