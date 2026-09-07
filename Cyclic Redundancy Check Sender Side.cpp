@@ -33,7 +33,7 @@ int main()
     {
         if (message[i] == 1)
         {
-            for (int j = 0; j < m; j++)
+            for (j = 0; j < m; j++)
                 message[i + j] = message[i + j] ^ divisor[j];
         }
     }
