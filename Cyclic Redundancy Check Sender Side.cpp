@@ -21,15 +21,15 @@ int main()
     }
     int p = n +(m - 1);
     int message[p]; 
-     for (int i = 0; i < n; i++)
+     for (i = 0; i < n; i++)
     {
         message[i] = frame[i];
     }
-    for (int i = n; i < p; i++)
+    for ( i = n; i < p; i++)
     {
         message[i] = 0;
     }
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         if (message[i] == 1)
         {
@@ -38,16 +38,16 @@ int main()
         }
     }
     cout << "CRC: ";
-    for (int i = n; i < p; i++)
+    for (i = n; i < p; i++)
     {
         cout << message[i];
     }
     cout << "\nTransmitted Frame: ";
-    for (int i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
     {
         cout << frame[i];
     }
-    for (int i = n; i < p; i++)
+    for (i = n; i < p; i++)
     {
         cout << message[i];
     }
