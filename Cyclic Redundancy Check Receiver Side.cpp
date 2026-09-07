@@ -31,7 +31,7 @@ int main()
     }
     int p=n-(m-1);
     int count=0;
-    for (int i = p; i < n; i++)
+    for (i = p; i < n; i++)
     {
         if(message[i]==1){
         	count=count+1;
