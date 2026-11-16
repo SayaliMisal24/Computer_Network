@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-    int n, m,i,j,k;
+    int p, m,i,j,k;
     cout << "Enter the size of message: ";
-    cin >> n;
-    int message[n];
+    cin >> p;
+    int message[p];
     cout << "Enter the message: ";
-    for ( i = 0; i < n; i++)
+    for ( i = 0; i < p; i++)
     {
         cin >> message[i];
     }
@@ -19,6 +19,7 @@ int main()
     {
         cin >> divisor[j];
     }
+    int n=p-(m-1);
     for (i = 0; i < n; i++)
     {
         if (message[i] == 1)
@@ -29,9 +30,9 @@ int main()
 			}
 		}
     }
-    int p=n-(m-1);
+    
     int count=0;
-    for (i = p; i < n; i++)
+    for (i = n; i < p; i++)
     {
         if(message[i]==1){
         	count=count+1;
