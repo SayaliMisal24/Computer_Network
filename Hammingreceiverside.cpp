@@ -24,6 +24,7 @@ int main()
     }
     else{
         C[11-k]=!C[11-k];
+        cout<<"Error is Present";
     }
     for (i=0;i<11;i++){
         cout<<C[i];
