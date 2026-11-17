@@ -14,7 +14,7 @@ int main()
 	if(a<0 || a>255 || b<0 || b>255 || c<0 || c>255 || d<0 || d>255){
 		cout<<"Invalid address";
 	}
-	if(0<=a && a<=127){ 
+	else if(0<=a && a<=127){ 
 		cout<<"\nAddress is present in class A"<<endl;
 		cout<<"Network Mask: 255.0.0.0"<<endl;
 		cout<<"Number of addresses: 16777216"<<endl;
